@@ -24,6 +24,7 @@ headers = {
 
 
 def price_filter(get_price: str):
+    """This function will detect the currency € or $ and clean the data"""
     if "€" in get_price:
         get_price = get_price.replace(".", "").split("\xa0€")[0].replace("\xa0€", "").replace(",", ".")
         return get_price
@@ -33,6 +34,7 @@ def price_filter(get_price: str):
 
 
 def amz_price_verifier(url_amz):
+    """This function will extract the price, product title and the Amazon url"""
     response = requests.get(url=url_amz, headers=headers)
     response.raise_for_status()
     amazon_data = response.text
