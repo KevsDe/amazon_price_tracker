@@ -1,7 +1,7 @@
 # Amazon price tracker
 * API
     * https://sheety.co/
-*Google sheet template
+* Google sheet template
     * https://docs.google.com/spreadsheets/d/1ko8QtoIip5O-bzOhwcRfhCs8JqLqHfxYnDpRNQjE3W4/edit?usp=sharing
 
 ## Link Sheety with the google sheet
